@@ -91,7 +91,12 @@
   Необходимо использовать делегирование.
    */
 
-  // пока не сделала, в процессе, но истекает срок сдачи дз
+   function elementText(event) {
+    if (event.target.tagName == "BUTTON") {
+      console.log(event.target.textContent);
+    }
+  }
+  document.querySelector('ul').addEventListener('click', event => {elementText(event)});
 
   /*
   6. Вопрос: Почему в console.log пишется сначала текст из 5 задания и только
